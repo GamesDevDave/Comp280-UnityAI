@@ -5,6 +5,13 @@ using UnityEngine;
 public class SCR_ScatterState : StateMachineBehaviour
 {
 
+    /// <Summary> This is the script that is used within the animator in order to reference scatter movement.
+    /// <Description>
+    /// In the start function I get all of the referneces I need in order to work through the animator.
+    /// In the update function I reference the scatter function which sends all the ghosts to their homes.
+    /// It also checks if the power pill is active to ensure the animators parameters are updated.
+    /// </Description>
+
     public SCR_Scatter scatterScript;
     private GameObject managerReference;
     [SerializeField]
